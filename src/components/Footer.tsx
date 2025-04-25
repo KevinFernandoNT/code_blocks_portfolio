@@ -1,5 +1,5 @@
 import React from 'react';
-import { Code, Mail, Phone, MapPin, ArrowRight, Facebook, Twitter, Instagram, Linkedin, Github } from 'lucide-react';
+import { Code, Mail, Phone, ArrowRight, Facebook, Twitter, Instagram, Linkedin, Github } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -61,12 +61,12 @@ const Footer = () => {
               </li>
               <li>
                 <a href="#services" className="text-gray-400 hover:text-white transition-colors duration-300">
-                  Branding & Visual Identity
+                  Design Consulting
                 </a>
               </li>
               <li>
                 <a href="#services" className="text-gray-400 hover:text-white transition-colors duration-300">
-                  Design Consulting
+                  Free Wireframing & Prototyping
                 </a>
               </li>
             </ul>
@@ -106,12 +106,6 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-6">Contact Us</h4>
             <ul className="space-y-4">
-              <li className="flex">
-                <MapPin size={20} className="text-white mr-3 flex-shrink-0" />
-                <span className="text-gray-400">
-                  42 Innovation Drive, Colombo 04, Sri Lanka
-                </span>
-              </li>
               <li>
                 <a href="tel:+94112345678" className="flex text-gray-400 hover:text-white transition-colors duration-300">
                   <Phone size={20} className="text-white mr-3 flex-shrink-0" />

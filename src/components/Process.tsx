@@ -20,18 +20,18 @@ const Process = () => {
     },
     {
       icon: <Code size={24} />,
-      title: "Development",
-      description: "Our developers bring the designs to life using modern frameworks, ensuring fast, secure, and scalable applications.",
+      title: "Development & Daily Demos",
+      description: "Our developers bring the designs to life using modern frameworks. We provide daily demos and release features based on your immediate needs and feedback.",
     },
     {
       icon: <Zap size={24} />,
-      title: "Testing & QA",
-      description: "We thoroughly test across browsers and devices, fixing bugs and optimizing performance before launch.",
+      title: "Continuous Testing & QA",
+      description: "We maintain rigorous testing throughout development, ensuring each feature meets quality standards before release.",
     },
     {
       icon: <Rocket size={24} />,
-      title: "Deployment",
-      description: "We prepare your application for production, launch it on your preferred hosting, and provide a final walkthrough.",
+      title: "Deployment & Support",
+      description: "We deploy features as they're ready and provide ongoing support to ensure your application runs smoothly and securely.",
     },
   ];
 
@@ -44,7 +44,7 @@ const Process = () => {
           </h2>
           <div className="w-20 h-1 bg-black mx-auto mb-6"></div>
           <p className="text-lg text-gray-700">
-            We follow a structured approach to ensure every project delivers exceptional results and meets your business goals.
+            We follow an agile approach with daily demos and feature releases based on your needs, ensuring continuous progress and immediate feedback.
           </p>
         </div>
         

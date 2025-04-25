@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ChevronRight } from 'lucide-react';
+import projectImage from '../assets/work_1.png';
 
 interface Project {
   id: number;
@@ -12,6 +13,7 @@ interface Project {
   challenge: string;
   solution: string;
   outcome: string;
+  sampleImages?: string[];
 }
 
 const Portfolio = () => {
@@ -29,75 +31,20 @@ const Portfolio = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: "FinTrack Dashboard",
+      title: "Cyberlern E-Learning Platform",
       category: "web",
-      image: "https://images.pexels.com/photos/7654058/pexels-photo-7654058.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      clientName: "GlobalFinance Ltd",
-      description: "A comprehensive financial analytics dashboard for tracking investments and expenditures.",
-      technologies: ["React", "TypeScript", "TailwindCSS", "Chart.js"],
-      challenge: "The client needed a powerful yet intuitive dashboard to visualize complex financial data for their customers.",
-      solution: "We created a responsive dashboard with customizable widgets, real-time data visualization, and intuitive controls.",
-      outcome: "The platform saw a 35% increase in user engagement and reduced customer support inquiries by 28%."
-    },
-    {
-      id: 2,
-      title: "EcoShop E-Commerce",
-      category: "web",
-      image: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      clientName: "EcoShop Organics",
-      description: "A modern e-commerce platform for sustainable and eco-friendly products.",
-      technologies: ["Next.js", "Stripe", "Sanity CMS", "Framer Motion"],
-      challenge: "Building a high-performance e-commerce platform that aligns with the client's eco-friendly brand values.",
-      solution: "We developed a lightweight, energy-efficient web application with optimized images and sustainable design principles.",
-      outcome: "Conversion rates increased by 42% and the site's carbon footprint was reduced by 68% compared to their previous platform."
-    },
-    {
-      id: 3,
-      title: "MediConnect App",
-      category: "mobile",
-      image: "https://images.pexels.com/photos/3845729/pexels-photo-3845729.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      clientName: "HealthTech Solutions",
-      description: "A telemedicine mobile application connecting patients with healthcare providers.",
-      technologies: ["React Native", "Firebase", "WebRTC", "Node.js"],
-      challenge: "Creating a secure, HIPAA-compliant platform for virtual medical consultations with a seamless user experience.",
-      solution: "We built a cross-platform mobile app with end-to-end encryption, appointment scheduling, and video consultation features.",
-      outcome: "The app facilitated over 10,000 virtual consultations in its first quarter, with a 4.8/5 user satisfaction rating."
-    },
-    {
-      id: 4,
-      title: "TravelBuddy UX Redesign",
-      category: "ux",
-      image: "https://images.pexels.com/photos/3075988/pexels-photo-3075988.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      clientName: "TravelBuddy Inc.",
-      description: "A comprehensive UX redesign of a popular travel planning platform.",
-      technologies: ["Figma", "Adobe XD", "Maze", "UserTesting"],
-      challenge: "Addressing user pain points in the existing travel platform that was losing market share to competitors.",
-      solution: "We conducted extensive user research and completely redesigned the user journey, focusing on simplifying the booking process.",
-      outcome: "User satisfaction scores increased by 47% and booking completion rates improved by 28% after the redesign."
-    },
-    {
-      id: 5,
-      title: "FreshBrew Brand Identity",
-      category: "branding",
-      image: "https://images.pexels.com/photos/1251175/pexels-photo-1251175.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      clientName: "FreshBrew Coffee",
-      description: "Complete brand identity design for an artisanal coffee company.",
-      technologies: ["Adobe Illustrator", "Photoshop", "InDesign", "Procreate"],
-      challenge: "Creating a distinctive brand identity that stands out in the competitive coffee market while reflecting the company's values.",
-      solution: "We developed a comprehensive brand system including logo, typography, color palette, packaging, and digital assets.",
-      outcome: "The new brand identity helped secure retail partnerships with premium stores and increased social media following by 215%."
-    },
-    {
-      id: 6,
-      title: "WorkFlow Project Management",
-      category: "web",
-      image: "https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      clientName: "ProductiveCo",
-      description: "A collaborative project management tool for remote teams.",
-      technologies: ["Vue.js", "Express", "MongoDB", "Socket.io"],
-      challenge: "Building a real-time collaboration tool that maintains high performance even with hundreds of concurrent users.",
-      solution: "We created a reactive application with real-time updates, customizable workflows, and powerful reporting features.",
-      outcome: "The platform has been adopted by over 200 companies, improving their team productivity by an average of 32%."
+      image: projectImage,
+      clientName: "Cyberlern",
+      description: "A dynamic e-learning platform offering interactive courses and personalized learning paths.",
+      technologies: ["React", "TypeScript", "TailwindCSS", "Node.js"],
+      challenge: "The client required a scalable and engaging platform to deliver educational content and track student progress effectively.",
+      solution: "We developed a user-friendly platform with features like video lessons, interactive quizzes, progress tracking, and personalized learning recommendations.",
+      outcome: "The platform facilitated a 40% increase in course completion rates and improved student satisfaction scores by 25%.",
+      sampleImages: [
+        "https://images.unsplash.com/photo-1516321318423-f06f8e5782d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+        "https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+        "https://images.unsplash.com/photo-1516321318423-f06f8e5782d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+      ]
     }
   ];
 
@@ -146,27 +93,28 @@ const Portfolio = () => {
         {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProjects.map((project) => (
-            <div 
-              key={project.id}
-              className="group relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300"
-            >
-              <div className="aspect-w-16 aspect-h-12 bg-gray-200">
-                <img 
-                  src={project.image} 
-                  alt={project.title} 
-                  className="object-cover w-full h-full"
-                />
+            <div key={project.id} className="group">
+              <div className="relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300">
+                <div className="relative h-64 w-full">
+                  <img 
+                    src={project.image} 
+                    alt={project.title} 
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                  <button
+                    onClick={() => openProjectDetails(project)}
+                    className="inline-flex items-center text-white text-sm font-medium"
+                  >
+                    View Case Study
+                    <ChevronRight size={16} className="ml-1" />
+                  </button>
+                </div>
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                <h3 className="text-xl font-bold text-white mb-2">{project.title}</h3>
-                <p className="text-gray-200 text-sm mb-4">{project.description}</p>
-                <button
-                  onClick={() => openProjectDetails(project)}
-                  className="inline-flex items-center text-white text-sm font-medium"
-                >
-                  View Case Study
-                  <ChevronRight size={16} className="ml-1" />
-                </button>
+              <div className="text-center mt-4 px-2">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">{project.title}</h3>
+                <p className="text-gray-600 text-sm">{project.description}</p>
               </div>
             </div>
           ))}
@@ -177,11 +125,13 @@ const Portfolio = () => {
           <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4 overflow-y-auto">
             <div className="bg-white rounded-xl shadow-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto">
               <div className="relative">
-                <img 
-                  src={activeProject.image} 
-                  alt={activeProject.title} 
-                  className="w-full h-64 object-cover"
-                />
+                <div className="relative h-96 w-full">
+                  <img 
+                    src={activeProject.image} 
+                    alt={activeProject.title} 
+                    className="absolute inset-0 w-full h-full object-cover rounded-t-xl"
+                  />
+                </div>
                 <button
                   onClick={closeProjectDetails}
                   className="absolute top-4 right-4 w-10 h-10 rounded-full bg-white text-gray-900 flex items-center justify-center hover:bg-gray-100"
@@ -215,6 +165,23 @@ const Portfolio = () => {
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">The Outcome</h3>
                   <p className="text-gray-700">{activeProject.outcome}</p>
                 </div>
+                
+                {activeProject.sampleImages && activeProject.sampleImages.length > 0 && (
+                  <div className="mb-6">
+                    <h3 className="text-lg font-semibold text-gray-900 mb-4">Project Screenshots</h3>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      {activeProject.sampleImages.map((image, index) => (
+                        <div key={index} className="relative h-64 rounded-lg overflow-hidden">
+                          <img 
+                            src={image} 
+                            alt={`${activeProject.title} screenshot ${index + 1}`}
+                            className="absolute inset-0 w-full h-full object-cover"
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
                 
                 <div className="mb-6">
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">Technologies Used</h3>

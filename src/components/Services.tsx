@@ -1,13 +1,19 @@
 import React from 'react';
-import { Layers, Monitor, Smartphone, Palette, Briefcase, Zap } from 'lucide-react';
+import { Layers, Monitor, Smartphone, Palette, Briefcase, Zap, Cloud, Gift } from 'lucide-react';
 
-const ServiceCard = ({ icon, title, description }: { 
+const ServiceCard = ({ icon, title, description, isFree }: { 
   icon: React.ReactNode, 
   title: string, 
-  description: string 
+  description: string,
+  isFree?: boolean
 }) => {
   return (
-    <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-100">
+    <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-100 relative">
+      {isFree && (
+        <div className="absolute -top-3 -right-3 bg-green-500 text-white rounded-full p-2 shadow-lg">
+          <Gift size={20} />
+        </div>
+      )}
       <div className="w-14 h-14 bg-gray-100 rounded-lg flex items-center justify-center text-black mb-6">
         {icon}
       </div>
@@ -35,19 +41,20 @@ const Services = () => {
       description: "We ensure your application looks and works perfectly on all devices, from desktop to mobile."
     },
     {
-      icon: <Palette size={28} />,
-      title: "Branding & Visual Identity",
-      description: "We help define and develop your brand identity to create a cohesive digital presence."
-    },
-    {
       icon: <Briefcase size={28} />,
       title: "Design Consulting",
       description: "We provide expert advice to optimize your digital products, improve conversion rates, and enhance user satisfaction."
     },
     {
       icon: <Zap size={28} />,
-      title: "Prototyping & Wireframing",
-      description: "We create interactive prototypes to test concepts and refine your product before full development."
+      title: "Free Wireframing & Prototyping",
+      description: "Available upon request, we create detailed wireframes and interactive prototypes free of charge to visualize your product concepts.",
+      isFree: true
+    },
+    {
+      icon: <Cloud size={28} />,
+      title: "Hosting & Deployment",
+      description: "We provide reliable hosting solutions with robust deployment pipelines to ensure your application runs smoothly and securely."
     }
   ];
 
@@ -71,6 +78,7 @@ const Services = () => {
               icon={service.icon}
               title={service.title}
               description={service.description}
+              isFree={service.isFree}
             />
           ))}
         </div>

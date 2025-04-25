@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send, AlertCircle } from 'lucide-react';
+import { Mail, Phone, Send, AlertCircle } from 'lucide-react';
 
 interface FormState {
   name: string;
@@ -101,19 +101,6 @@ const Contact = () => {
             <h3 className="text-2xl font-bold text-gray-900 mb-6">Contact Information</h3>
             
             <div className="space-y-6 mb-8">
-              <div className="flex items-start">
-                <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-lg bg-blue-100 text-blue-600 mr-4">
-                  <MapPin size={24} />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-1">Office Location</h4>
-                  <p className="text-gray-700">
-                    42 Innovation Drive, Colombo 04<br />
-                    Sri Lanka
-                  </p>
-                </div>
-              </div>
-              
               <div className="flex items-start">
                 <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-lg bg-blue-100 text-blue-600 mr-4">
                   <Mail size={24} />
